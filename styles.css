@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background: url('https://img.freepik.com/free-vector/bokeh-lights-effect-dark-background_23-2148425676.jpg?w=740&t=st=1706781071~exp=1706781671~hmac=a291dfa527869a14f6e6b7e82477c11976c62fa317dbcdf64f0d4527806e14c8') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 10px;
+}
+.navbar{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.navbar__logo{
+    width: 8rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+.navbar__items{
+    display: flex;
+    gap: 7rem;
+    color: #fff;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+}
+.navbar__link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+}
+
+.navbar__link:hover{
+    color: orange;
+}
+@media screen and (max-width: 768px) {
+    .navbar__items{
+        font-size: 1.2rem;
+    }
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20rem;
+}
+
+
+.main__left{
+    width: 40vw;
+    margin-top: 5rem;
+}
+.main__title{
+    font-family: "Bebas Neue", sans-serif;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 800;
+}
+.main__subtitle{
+    font-family: "Bebas Neue", sans-serif;
+    color: #ff9900;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.main__btn{
+    background: #ff9900;    
+    color: #fff;
+    margin: 3rem;
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.main__btn:hover{
+    transition: 0.3s ease-in;
+    scale: 1.2;
+}
+.main__right{
+    position: relative;
+    width: 40vw;
+}
+
+.main__image{
+    width: 27rem;
+    height: 27rem;
+    border-radius: 50%;
+    z-index: 9;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.main__circle-img{
+    position: absolute;
+    width: 31rem;
+    height: 31rem;
+    top: 0;
+    left: 0;
+}
+@media screen and (max-width: 1036px) {
+    .main{
+        margin-bottom: 12rem;
+    }
+    .main__image{
+        width: 22rem;
+        height: 22rem;
+    }
+    .main__circle-img{
+        width: 26rem;
+        height: 26rem;   
+    }
+}
+@media screen and (max-width: 1036px) {
+    .main{
+        margin-bottom: 9rem;
+    }
+    .main__image{
+        width: 17rem;
+        height: 17rem;
+    }
+    .main__circle-img{
+        width: 21rem;
+        height: 21rem;   
+    }
+}
+@media screen and (max-width: 768px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar__items{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;  
+        gap: 0.5rem;
+        margin-right: 0;
+    }
+    .main{
+        margin-bottom: 4rem;
+    }
+    .main__image{
+        width: 14rem;
+        height: 14rem;
+    }
+    .main__circle-img{
+        width: 18rem;
+        height: 18rem;   
+    }
+    .main__title{
+        font-size: 2.8rem;
+    }
+    .main__subtitle{
+        font-family: "Bebas Neue", sans-serif;
+        color: #ff9900;
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 600px){
+    .main{
+        margin-bottom: 2rem;
+    }
+    .main__right{
+        margin-top: 3rem;
+    }
+    .main__image{
+        width: 9rem;
+        height: 9rem;
+    }
+    .main__circle-img{
+        width: 13rem;
+        height: 13rem;   
+    }
+}
+@media screen and (max-width: 600px){
+    .main__right{
+        display: none;
+    }
+    .main__left{
+        width: 90vw;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 380px){
+    .navbar{
+        gap: 3rem;
+        padding-top: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.info{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 9rem;
+    justify-content: center;
+}
+.info__img{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid gray;
+}
+.info__right{
+    border-radius: 15px;
+    padding: 1rem;
+    background: url('https://img.freepik.com/premium-photo/purple-pink-abstract-gradient-textures_170579-548.jpg?w=740') no-repeat;
+    background-size: cover;
+    border: 2px solid #ff9900;
+}
+.info__title{
+    font-size: 2.1rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+.info__list{
+    font-size: 1.7rem;
+    color: #fff;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.details__info{
+    background: url('https://img.freepik.com/free-photo/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product-plain-studio-background_1258-63867.jpg?w=996&t=st=1706797832~exp=1706798432~hmac=184cf0ea331752a08ed75de35a76d519be7c1966078dfc392a96266ccaa2009e') no-repeat;
+    background-size: cover;
+    color: black;
+    width: 80vw;
+    border-radius: 10px;
+    border: 3px solid #ff9900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.details__link-text{
+    align-self: flex-start;
+}
+p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.details__title{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #ff9900;
+    /* color: #f39e1e; */
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(51, 47, 51);
+    height: 10rem;
+}
+.footer__tg{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
